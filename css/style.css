@@ -14,6 +14,17 @@ body {
     font-size: 0.75em;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+
+/*margins*/
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 /*wrappers*/
 
 .small-wrapper {
@@ -46,7 +57,7 @@ a {
     text-align: right;
 }
 
-.txt-cent {
+.txt-center {
     text-align: center;
 }
 
@@ -76,4 +87,21 @@ header .top-nav .lang-menu  li{
 
 header .lang-menu li:not(:last-child) {
     border-right: 1px solid black;
+}
+
+/* jumbotron */
+.jumbotron {
+    height: 550px;
+    position:relative;
+    background-image: url("../img/hero-bg.jpg");
+    background-size:cover;
+    background-position: bottom left;
+}
+
+.teaser {
+    color:white;
+}
+
+.teaser-text {
+    font-size: 1.2em;
 }
