@@ -11,7 +11,7 @@ body {
 }
 
 .smallest-txt {
-
+    font-size: 0.70em;
 }
 
 .small-txt {
@@ -131,28 +131,28 @@ section.products .col_inner {
     padding: 30px 15px 30px 15px;
 }
 
-section .products_col_content {
+section.products  .col_content {
     background-color: #fafafa;
     padding: 40px 20px;
 }
 
-section .products_col_content h2 {
+section.products  .col_content h2 {
     font-size: 1.75em;
     font-weight: 700;
 }
 
-.products_col_content .learn-more a {
+section.products .col_content .learn-more a {
     color: #131aff;
 }
 
-section .products_col_content img {
+section.products .col_content img {
     width: 100%;
     height:auto;
 }
 
 /* resizing img on tablet to keep 2 products per row avoiding images breaking columns*/
 @media screen and ( min-width:768px ) and( max-width: 991px ) {
-    section .products_col_content img {
+    section.products .col_content img {
         display: inline-block;
         max-width: 275px;
     }    
@@ -160,11 +160,47 @@ section .products_col_content img {
 
 /* how it works section*/
 
-/*section jumbo*/
-.section-jumbo {
+/*phone overlay */
+.phone {
     height: 450px;
     background-image: url("../img/HelbizBanner.jpg");
     background-repeat: no-repeat;
+    background-position: left center;
     background-size:cover;
+}
 
+.phone img {
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    position:relative;
+    top: 200px;
+}
+
+section.how-it-works .col_inner {
+    padding: 100px 0;
+}
+
+
+section.how-it-works .col_content.left {
+    padding-right: 150px;
+}
+
+section.how-it-works .col_content.right  {
+    padding-left: 150px;
+}
+
+@media screen and ( max-width: 767px ) {
+    section.how-it-works .col_content.left {
+        padding: 350px 0 0 0;
+    }
+    
+    section.how-it-works .col_content.right  {
+        padding-left: 0;
+    }
+    
+    section.how-it-works .col_inner {
+        padding: 0  20px;
+    }
+    
 }
