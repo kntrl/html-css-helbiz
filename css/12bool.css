@@ -296,7 +296,7 @@ box-sizing: border-box;
     }
 
     .col-lg-9 {
-        width: calc( ( 100% / 12 ) * 8 );
+        width: calc( ( 100% / 12 ) * 9 );
     }
 
     .col-lg-10 {
