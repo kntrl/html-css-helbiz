@@ -55,7 +55,6 @@ h1 {
 /* menu */
 .menu {
     list-style-type: none;
-    margin-left: 10px;
 }
 
 .menu.hor li , .menu.hor {
@@ -117,11 +116,11 @@ header .lang-menu li:not(:last-child) {
     background-position: bottom left;
 }
 
-.teaser {
-    color:white;
+header .teaser {
+    color: #fff;
 }
 
-.teaser-text {
+header .teaser-text {
     font-size: 1.2em;
 }
 
@@ -284,4 +283,30 @@ section.info .col_content.find-us {
     .overlay {
         background-color:rgba(00, 00, 00, 0.0)
     }
+}
+
+
+/* community section*/
+section.community {
+    background-image: url("../img/Social-Banner.jpg");
+    background-size:cover;
+    position:relative;
+    height: 400px;
+}
+
+section.community h2 {
+    font-size: 2em;
+}
+
+section.community .menu li {
+    padding: 10px;
+}
+
+section.community .social.teaser {
+    background-color: #fff;
+    padding: 50px 100px;
+}
+
+section.community .menu .social-icon {
+    font-size:1.4em;
 }
