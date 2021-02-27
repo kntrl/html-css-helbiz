@@ -41,11 +41,15 @@ h1 {
     margin-bottom: 40px;
 }
 
-/*wrappers*/
+/*wrappers & overlays*/
 
 .small-wrapper {
     max-width:90%;
     margin:0 auto;
+}
+
+.overlay {
+    background-color: rgba(00, 00, 00, 0.2);
 }
 
 /* menu */
@@ -78,7 +82,6 @@ a {
 }
 
 .centered-block {
-    /* vertical+horizontal centering */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,7 +131,8 @@ header .lang-menu li:not(:last-child) {
 /*products section*/
 
 section.products .col_inner {
-    padding: 30px 15px 30px 15px;
+    padding: 25px 25px;
+
 }
 
 section.products  .col_content {
@@ -138,7 +142,6 @@ section.products  .col_content {
 
 section.products  .col_content h2 {
     font-size: 1.75em;
-    font-weight: 700;
 }
 
 section.products .col_content .learn-more a {
@@ -151,7 +154,7 @@ section.products .col_content img {
 }
 
 /* resizing img on tablet to keep 2 products per row avoiding images breaking columns*/
-@media screen and ( min-width:768px ) and( max-width: 991px ) {
+@media screen and ( min-width:768px ) and ( max-width: 991px ) {
     section.products .col_content img {
         display: inline-block;
         max-width: 275px;
@@ -203,4 +206,82 @@ section.how-it-works .col_content.right  {
         padding: 0  20px;
     }
     
+}
+
+/* info section */
+
+section.info {
+    color:white;
+}
+
+section.info .col_inner {
+    padding: 0 15px;
+}
+
+section.info .col_content {
+    padding-top: 30px;
+}
+
+section.info .col_inner.get-app,
+section.info .col_inner.find-us {
+    padding-bottom: 30px;
+}
+
+/*smart-mobility col*/
+section.info .col_bg.smart-mobility{
+    background-image: url("../img/ScooterHelbiz-2400.jpg");
+    background-size: cover;
+}
+
+section.info .col_content.smart-mobility {
+    padding: 75px;
+}
+
+section.info .col_content.smart-mobility h2 {
+    font-size: 2.80em;
+    font-weight: 400;
+}
+
+/*get-app col*/
+
+section.info .col_bg.get-app {
+    background-image: linear-gradient(to bottom,#41566a,#252f38)
+}
+
+section.info .col_inner.get-app {
+    padding-right: 15px;
+}
+
+section.info .col_content.get-app {
+    overflow:hidden;
+    height: 350px;
+}
+
+
+section.info .col_content.get-app img {
+    width: 100%;
+}
+
+
+/* find-us col*/
+section.info .col_inner.find-us {
+    padding-left: 15px;
+}
+
+section.info .col_bg.find-us {
+    background-image: url("../img/cities-1500.jpg");
+    background-size: cover;
+}
+
+section.info .col_content.find-us {
+    height: 350px;
+}
+
+
+/* removing overlay on lg-res*/
+
+@media screen and ( min-width: 991px) {
+    .overlay {
+        background-color:rgba(00, 00, 00, 0.0)
+    }
 }
